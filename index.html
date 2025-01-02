@@ -45,6 +45,74 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-hero-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>
+            <svg class="mobile-icons-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li><a class="mobile-link current" href="#">Studio</a></li>
+              <li><a class="mobile-link" href="#">Portfolio</a></li>
+              <li><a class="mobile-link" href="#">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="mobile-address">
+            <ul class="address-mobile">
+              <li>
+                <a class="address-link mobile current" href="tel:+110001111111">
+                  +11 (000) 111-11-11
+                </a>
+              </li>
+              <li>
+                <a class="address-link mobile" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+          </address>
+          <div>
+            <ul class="sociale">
+              <li class="item-icons">
+                <a class="icon-link" href="#">
+                  <svg class="sociale-icons" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item-icons">
+                <a class="icon-link" href="#">
+                  <svg class="sociale-icons" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item-icons">
+                <a class="icon-link" href="#">
+                  <svg class="sociale-icons" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item-icons">
+                <a class="icon-link" href="#">
+                  <svg class="sociale-icons" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -52,11 +120,13 @@
       <section class="section hero-section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- перелік особливостей -->
-      <section class="section section-features">
+      <section class="hidden section section-features">
         <div class="container">
           <h2 class="title-sections visually-hidden">list of features</h2>
           <ul class="list-features">
@@ -112,7 +182,7 @@
         </div>
       </section>
       <!-- опис команди -->
-      <section class="section section-team">
+      <section class="hidden section section-team">
         <div class="container">
           <h2 class="title-sections team">Our Team</h2>
           <ul class="list-taem">
@@ -268,7 +338,7 @@
         </div>
       </section>
       <!-- секция с портфоліо -->
-      <section class="section section-portfolio">
+      <section class="hidden section section-portfolio">
         <div class="container">
           <h2 class="title-sections portfolio">Our Portfolio</h2>
           <ul class="list-portfolio">
@@ -380,7 +450,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="hidden footer">
       <div class="container backgroung">
         <div class="footer-logo-sales">
           <a class="link-logo link" href="./index.html"
@@ -445,9 +515,9 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay is-open">
+    <div class="hidden modal-overlay" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close">
+        <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-icons-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -531,5 +601,8 @@
         </form>
       </div>
     </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
