@@ -449,6 +449,16 @@ letter-spacing: 0.02em;
     background-size: cover;
 }
 
+@media (min-resolution: 192dpi) {
+ .hero-section  {
+    background-image: linear-gradient(
+        to bottom,
+     rgba(46, 47, 66, 0.7),
+     rgba(46, 47, 66, 0.7)), 
+     url(../images/people-office@2x.jpg);
+  }
+}
+
 .hero-title {
     max-width: 216px;
     color: var(--color-white-background);
@@ -794,7 +804,6 @@ letter-spacing: 0.02em;
 @media screen and (min-width: 768px) {
 .section-features {
     max-width: 768px;
-    /* margin: 0 auto; */
 }
 
 .section-features .container {
