@@ -1242,6 +1242,11 @@ color: var(--color-primary-brand);
     background-color: var(--color-success);
 }
 
+.title-logo-footer:hover,
+.title-logo-footer:focus {
+    color: var(--color-pressed-state);
+}
+
  .container.backgroung {
     padding: 0 15px;
     column-gap: 0;
